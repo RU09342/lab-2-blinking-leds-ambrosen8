@@ -1,4 +1,4 @@
-# Multiple Blink
+# Simple Blink
 
 ## Purpose
 Blink a Single LED on the Processor.
