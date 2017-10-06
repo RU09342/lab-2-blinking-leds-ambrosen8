@@ -13,17 +13,20 @@ In order for the LEDs to blink a loop constantly runs that continuously incremen
 Every time the variable increments 1000 times the Red LED (P1.0) gets switched. Then when the incremented value reaches 2000 the Green LED (P4.7) blinks and the variable gets set to 0.
 
 ### MSP430FR2311
-Every time the variable increments 1000 times the Red LED (P1.0) gets switched. Then when the incremented value reaches 2000 the Green LED (P2.0) blinks and the variable gets set to 0.
+Every time the variable increments 1000 times the Red LED (P1.0) gets switched. Then when the incremented value reaches 2000 the Green LED (2.0) blinks and the variable gets set to 0.
 
 ### MSP430FR5994
-Uses both buttons (P5.6 & P5.5) to blink both LEDs (P1.0 & P1.1, Red & Green respectively). When Button P5.6 is pressed it causes the Red LED to blink. When Button P5.5 is pressed it causes the Green LED to blink.
+Every time the variable increments 1000 times the Red LED (P1.0) gets switched. Then when the incremented value reaches 2000 the Green LED (P1.1) blinks and the variable gets set to 0.
+
 
 ### MSP430FR6989
-Uses both buttons (P1.1 & P1.2) to blink both LEDs (P1.0 & P1.7, Red & Green respectively). When Button P5.6 is pressed it causes the Red LED to blink. When Button P5.5 is pressed it causes the Green LED to blink.
+Every time the variable increments 1000 times the Red LED (P1.0) gets switched. Then when the incremented value reaches 2000 the Green LED (P1.7) blinks and the variable gets set to 0.
+
 
 ### MSP4302553
-Since there is only one button (P1.3) it direction controls the Red LED (P1.0).
+Every time the variable increments 1000 times the Red LED (P1.0) gets switched. Then when the incremented value reaches 2000 the Green LED (P1.6) blinks and the variable gets set to 0.
+
 
 ## Demonstation
 
-![alt text](https://github.com/RU09342/lab-2-blinking-leds-ambrosen8/blob/master/Button%20Blink/Assets/ButtonBlink_fixed.gif)
+![alt text](https://github.com/RU09342/lab-2-blinking-leds-ambrosen8/blob/master/Multiple%20Blink/Assets/MultBlink.gif)
