@@ -1,7 +1,7 @@
 # Multiple Blink
 
 ## Purpose
-Blink a Single LED on the Processor
+Blink a Single LED on the Processor.
 
 ## Theory
 
