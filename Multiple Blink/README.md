@@ -1,25 +1,29 @@
 # Multiple Blink
-Now that we have blinked at least 1 LED, what about blinking multiple LEDS at the same time? The minimum that you need to develop is blinking at least two LEDs at two different rates. Although I am not going to give you a speed, you should probably pick a rate which is visible to a standard human. I really hope that you take this further and perform some of the extra work for this part of the lab exercise.
 
+## Purpose
+Blink multiple LEDs at various times
 
-# YOU NEED TO CREATE THE FOLLOWING FOLDERS
-* MSP430G2553
-* MSP430F5529
-* MSP430FR2311
-* MSP430FR5994
-* MSP430FR6989
+## Theory
 
-## README
-Remember to replace this README with your README once you are ready to submit. I would recommend either making a copy of this file or taking a screen shot. There might be a copy of all of these README's in a folder on the top level depending on the exercise.
+In order for the LEDs to blink a loop constantly runs that continuously increments an integer. Each time the integer reaches the specified threshold the LED will blink. Once the second LED reaches the blink threshold, the incremented interger gets set equal to zero again. Then the process repeats.
 
-## Extra Work
-When you take a look at the development boards, you are limited to what is built into the platform.
+## Individual Board Features
 
-### Even More LEDs
-Since up to this point you should have hopefully noticed that you are simply just controlling each pin on your processor. So... what is keeping you from putting an LED on each pin? Can you actually control the speed of each of these LEDs?
+### MSP430F5529
+Every time the variable increments 1000 times the Red LED (P1.0) gets switched. Then when the incremented value reaches 2000 the Green LED (P4.7) blinks and the variable gets set to 0.
 
-### Patterned Lights
-If you can control a ton of LEDs, what is keeping you from having a little fun? Why not try and make something like a moving face or other moving object in lights. *CAUTION* I would only do this if you have finished the rest of the lab.
+### MSP430FR2311
+Every time the variable increments 1000 times the Red LED (P1.0) gets switched. Then when the incremented value reaches 2000 the Green LED (P2.0) blinks and the variable gets set to 0.
 
-### UART Pattern Control
-If you have been using UART, could you set which LEDs are on or off based off some UART command? Would you want to send an Array over UART such as [1 0 1 0] or would you want to send a byte that corresponds to the status? Can you not only say which LEDs are on, but also tell them to blink at a particular rate if they were on (so LED1 Blink every 100ms)?
+### MSP430FR5994
+Uses both buttons (P5.6 & P5.5) to blink both LEDs (P1.0 & P1.1, Red & Green respectively). When Button P5.6 is pressed it causes the Red LED to blink. When Button P5.5 is pressed it causes the Green LED to blink.
+
+### MSP430FR6989
+Uses both buttons (P1.1 & P1.2) to blink both LEDs (P1.0 & P1.7, Red & Green respectively). When Button P5.6 is pressed it causes the Red LED to blink. When Button P5.5 is pressed it causes the Green LED to blink.
+
+### MSP4302553
+Since there is only one button (P1.3) it direction controls the Red LED (P1.0).
+
+## Demonstation
+
+![alt text](https://github.com/RU09342/lab-2-blinking-leds-ambrosen8/blob/master/Button%20Blink/Assets/ButtonBlink_fixed.gif)
