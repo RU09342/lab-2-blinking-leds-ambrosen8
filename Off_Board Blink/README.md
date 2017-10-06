@@ -11,7 +11,7 @@ The MSP430G2 comes with the MSP430G2553 IC placed in the center of it. This IC c
 
 ### Demonstation
 
-<img src="https://github.com/RU09342/lab-2-blinking-leds-ambrosen8/blob/master/Off_Board%20Blink/Assets/ButtonBlink.jpg" width="100"/>
+<img src="https://github.com/RU09342/lab-2-blinking-leds-ambrosen8/blob/master/Off_Board%20Blink/Assets/ButtonBlink.jpg" width="500"/>
 
 ## Multiple Blink
 
