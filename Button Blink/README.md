@@ -1,16 +1,16 @@
 # Button Blink
-_Horizontal line :_
+_
 
 ## Purpose
 _Horizontal line :_
 Blink an LED using the on board MSP430 buttons.
 
 ## Theory
-_Horizontal line :_
+_
 When a button gets pressed on the board an LED gets switched on or switched off. In order for this to occur the processor is constantly checking to see if a button gets pressed: this process is called polling. 
 
 ## Individual Board Features
-_Horizontal line :_
+_
 
 ### MSP430F5529
 Uses both buttons (P2.1 & P1.1) to blink both LEDs (P1.0 & P4.7, Red & Green respectively). When Button P2.1 is pressed it causes the Red LED to blink. When Button P1.1 is pressed it causes the Green LED to blink.
@@ -28,5 +28,5 @@ Uses both buttons (P1.1 & P1.2) to blink both LEDs (P1.0 & P1.7, Red & Green res
 Since there is only one button (P1.3) it direction controls the Red LED (P1.0).
 
 ## Demonstation
-_Horizontal line :_
+_
 ![alt text](https://github.com/RU09342/lab-2-blinking-leds-ambrosen8/blob/master/Button%20Blink/Assets/ButtonBlink.gif)
