@@ -27,4 +27,3 @@ while(1)
 	 count++;
 }
 }
-//can set as interrupt

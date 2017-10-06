@@ -9,15 +9,17 @@ void main(void)
 {
     WDTCTL = WDTPW | WDTHOLD;   //Stop Watch Dog Timer
 
-//LED
-P1DIR = 0x00;
-P1DIR |= BIT0;
-P4DIR = BIT7;
+//---------------LEDs-----------------------
 
-//Button
-P2DIR = 0x00;
+P1DIR = BIT0;				//Sets Red LED as output
+P4DIR = BIT7;				//Sets Green LED as output
+
+//----------------Button 1------------------------
+P1DIR &= ~(BIT1);
 P1REN = BIT1;
 P1OUT = BIT1;
+//----------------Button 2----------------
+P2DIR &= ~(BIT1);
 P2REN = BIT1;
 P2OUT = BIT1;
 

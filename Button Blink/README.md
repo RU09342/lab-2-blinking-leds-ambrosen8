@@ -1,21 +1,32 @@
-# Button Blink
-Now that you have looked at blinking the LED from some built in delay, but what if we wanted to control the state of the LED by a button? You may think "Why would I need a Microcontroller to perform the job of a switch?". And that is where you come in. The bare minimum for this part of the lab is to essentially replicate a switch with your development board.
+#Button Blink
+_Horizontal line :_
 
-# YOU NEED TO CREATE THE FOLLOWING FOLDERS
-* MSP430G2553
-* MSP430F5529
-* MSP430FR2311
-* MSP430FR5994
-* MSP430FR6989
+##Purpose
+_Horizontal line :_
+Blink an LED using the on board MSP430 buttons.
 
-## README
-Remember to replace this README with your README once you are ready to submit. I would recommend either making a copy of this file or taking a screen shot. There might be a copy of all of these README's in a folder on the top level depending on the exercise.
+##Theory
+_Horizontal line :_
+When a button gets pressed on the board an LED gets switched on or switched off. In order for this to occur the processor is constantly checking to see if a button gets pressed: this process is called polling. 
 
-## Extra Work
-What can we do to make this a little bit more worthy of needing a microcontroller.
+##Individual Board Features
+_Horizontal line :_
 
-### Button Based Speed Control
-Much like the UART controlled speed, what if you could cycle between speeds based on a button press? The speed could progress through a cycle of "Off-Slow-Medium-Fast" looping back when you hit the end.
+###MSP430F5529
+Uses both buttons (P2.1 & P1.1) to blink both LEDs (P1.0 & P4.7, Red & Green respectively). When Button P2.1 is pressed it causes the Red LED to blink. When Button P1.1 is pressed it causes the Green LED to blink.
 
-### Color Change
-What if upon a button press, the LED which was blinking changed. Some of the development boards contain two LEDs, so you could swap between a Red and a Green LED.
+###MSP430FR2311
+Since there is only one button (P1.1) it direction controls the Red LED (P1.0).
+
+###MSP430FR5994
+Uses both buttons (P5.6 & P5.5) to blink both LEDs (P1.0 & P1.1, Red & Green respectively). When Button P5.6 is pressed it causes the Red LED to blink. When Button P5.5 is pressed it causes the Green LED to blink.
+
+###MSP430FR6989
+Uses both buttons (P1.1 & P1.2) to blink both LEDs (P1.0 & P1.7, Red & Green respectively). When Button P5.6 is pressed it causes the Red LED to blink. When Button P5.5 is pressed it causes the Green LED to blink.
+
+###MSP4302553
+Since there is only one button (P1.3) it direction controls the Red LED (P1.0).
+
+##Demonstation
+_Horizontal line :_
+![alt text]()
