@@ -12,4 +12,4 @@ All boards work the same way, the infinite loop causes the Red LED on the board 
 
 ## Demonstation
 
-![alt text]()
+![alt text](https://github.com/RU09342/lab-2-blinking-leds-ambrosen8/blob/master/Simple%20Blink/Assets/SimpleBlink.gif)
